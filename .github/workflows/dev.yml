@@ -9,7 +9,7 @@ on:
       version:
         description: 'Neko version'
         required: true
-        default: '1.2.2-beta'
+        default: '1.2.3-beta'
         type: string
       changelog:
         description: 'Changelog'
@@ -22,7 +22,7 @@ jobs:
     permissions:
       contents: write
     name: Build Neko
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     strategy:
       fail-fast: false
       matrix:
